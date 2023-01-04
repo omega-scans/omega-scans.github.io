@@ -502,3 +502,8 @@ h4 {
 .casg {
   max-width: 180px
 }
+.notice a, a:visited
+{
+  color: white;
+  text-decoration: underline;
+}
