@@ -507,3 +507,6 @@ h4 {
   color: white;
   text-decoration: underline;
 }
+#disqus_thread{
+  margin: auto 25px;
+}

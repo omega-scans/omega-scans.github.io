@@ -354,3 +354,6 @@ margin-left: 10px;
 .nextandprev a[rel=next] {
     float: right;
 }
+#disqus_thread{
+  margin: auto 25px;
+}
