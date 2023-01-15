@@ -444,6 +444,9 @@ h4 {
   background-color: #5865F2
 }
 
+.navpng4:hover {
+  background-color: #ffdd00
+}
 #myBtn {
   display: none;
   position: fixed;
