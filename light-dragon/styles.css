@@ -114,16 +114,17 @@ img {
 
 .topnav a:hover {
   background-color: #253A47;
-  color: white;
+  color: #ffffff;
 }
 
 .topnav a.active {
   background-color: #253A47;
-  color: white;
+  color: #ffffff;
 }
 
 .topnav .icon {
   display: none;
+  height: 26.2px
 }
 
 @media screen and (max-width: 600px) {
@@ -135,9 +136,7 @@ img {
     float: right;
     display: block;
   }
-}
 
-@media screen and (max-width: 600px) {
   .topnav.responsive {
     position: relative;
   }
@@ -154,7 +153,6 @@ img {
   display: block;
   text-align: left;
 }
-}
 
 .topnav.responsive .dropdown {
   float: none;
@@ -169,12 +167,10 @@ img {
   width: 100%;
   text-align: left;
 }
-
 .omegasyb {
-  font-size: 3.5rem;
-  font-family: serif;
+  max-height: 54.9px;
   margin: 0;
-  padding: 0
+  padding: 0;
 }
 
 /*navbar*/
