@@ -354,3 +354,9 @@ margin-left: 10px;
 #disqus_thread{
   margin: auto 25px;
 }
+.commentscont
+{
+  background-color: #333;
+  padding-top: 25px;
+  margin-bottom: 25px;
+}
