@@ -513,3 +513,26 @@ h4 {
 #disqus_thread{
   margin: auto 25px;
 }
+<<<<<<< HEAD
+.commentscont
+{
+  background-color: #333;
+  padding-top: 25px;
+  margin-bottom: 25px;
+}
+.pg404
+{
+align-items: center;
+justify-content: center;
+text-align: center;
+background-color: #333333;
+color: #fff;
+padding: 25px;
+margin: 25px 0;
+}
+.pg404 img
+{
+  margin: auto;
+}
+=======
+>>>>>>> parent of 759e515 (404, title IMAGES)
