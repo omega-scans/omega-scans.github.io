@@ -360,3 +360,31 @@ margin-left: 10px;
   padding-top: 25px;
   margin-bottom: 25px;
 }
+.support {
+  display: flex;
+  background-color: #333;
+  padding-bottom: 0;
+}
+
+.navpng {
+  padding: 13px;
+  color: #ffffff;
+  width: 25px;
+  height: 25px;
+  line-height: 1;
+}
+.navpng1:hover {
+  background-color: #fa6755;
+}
+
+.navpng2:hover {
+  background-color: #0666b4
+}
+
+.navpng3:hover {
+  background-color: #5865F2
+}
+
+.navpng4:hover {
+  background-color: #ffdd00
+}
