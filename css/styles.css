@@ -271,7 +271,7 @@ h4 {
   padding-top: 50px;
   margin: 0 auto;
   background-color: #333;
-  color: #808080;
+  color: #C0C0C0;
   font-size: 12px;
   text-align: center;
 }
@@ -280,7 +280,7 @@ h4 {
   margin: auto;
   display: flex;
   background-color: #333;
-  color: #808080;
+  color: #C0C0C0;
 }
 
 .chapter-list ul li {
