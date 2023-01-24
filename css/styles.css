@@ -214,7 +214,7 @@ h4 {
 
 .listing .cmicdtl .comicsummary .chapter-list ul li span {
   float: right;
-  color: #555;
+  color: #C0C0C0;
   font-size: 12px;
 }
 
@@ -385,7 +385,7 @@ h4 {
 }
 
 .list {
-  color: #b8b8b8;
+  color: #555;
   background-color: #363636;
   padding: 10px 0;
   margin-bottom: 10px
@@ -424,7 +424,7 @@ h4 {
 
 .list .listch ul li a {
   text-decoration: none;
-  color: #808080;
+  color: #C0C0C0;
 }
 
 .list .listch ul li a:visited {
