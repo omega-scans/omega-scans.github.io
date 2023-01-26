@@ -269,6 +269,7 @@ h4 {
 
 .rights {
   padding-top: 50px;
+  padding-bottom: 50px;
   margin: 0 auto;
   background-color: #333;
   color: #C0C0C0;
@@ -312,7 +313,10 @@ h4 {
   padding-bottom: 10px;
   margin-bottom: 30px;
 }
-
+.allcontent h3
+{
+  padding-top: 23px !important;
+}
 .info {
   padding-top: 25px;
   margin: 0 auto;

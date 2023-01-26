@@ -95,7 +95,7 @@ img {
 /*navbar*/
 .topnav {
   overflow: hidden;
-  background-color: #333;
+  background-color: #253A47;
 }
 
 .topnav a {
@@ -109,7 +109,7 @@ img {
 }
 
 .activate {
-  background-color: #66A3BB
+  background-color: #253A47
 }
 
 .topnav a:hover {
