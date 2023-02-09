@@ -35,6 +35,42 @@
     content="omega scans, omega scans manga, omega scans manhwa, omegascans, patreon.com/omegascans, omega scan, omegascan, omega scanlations, quality manhwa, quality manga, quality manhua, manga, manhwa, manhua, the senior disciple, the messenger, call sign, Call Sign, Light Dragon, light dragon, Gwanglyong-gi, gwanglyong-gi, Светлый дракон, 광룡기, I Picked Up A Lamp Today, i picked up a lamp today, 오늘도 램프를 주웠다" />
   <link rel="alternate" title="Omega Scans | Omega Scanlations | Manga | Manhwa | Manhua | The Senior Disciple | Call Sign | Light Dragon | SFW | I Picked Up A Lamp Today  " />
   <meta name="description" content="Omega Scans">
+  <script type="application/ld+json" >
+	{
+		"@context": "https://schema.org",
+		{
+			"@type": "CollectionPage",
+			"@id": "https://omega-scans.github.io/",
+			"url": "https://omega-scans.github.io/",
+			"name": "Omega Scans",
+			"isPartOf": {
+				"@id": "https://omega-scans.github.io/#website"
+			},
+			"description": "Read Comics",
+			"breadcrumb": {
+				"@id": "https://omega-scans.github.io/#breadcrumb"
+			},
+			"inLanguage": "en-US"
+		}, {
+			"@type": "BreadcrumbList",
+			"@id": "https://omega-scans.github.io/#breadcrumb",
+			"itemListElement": [{
+				"@type": "ListItem",
+				"position": 1,
+				"name": "Home"
+			}]
+		}, {
+			"@type": "WebSite",
+			"@id": "https://omega-scans.github.io/#website",
+			"url": "https://omega-scans.github.io/",
+			"name": "Omega Scans",
+			"description": "Read Comics, Manga, Manhwa, Manhua",
+
+			},
+			"inLanguage": "en-US"
+		}
+
+</script>
   <meta name="description" content="Omega Scanlation">
   <meta name="keywords" content="Omega Scanlation">
   <meta name="keywords" content="Omega Scans">
@@ -54,10 +90,13 @@
   <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,200;1,200;1,300&display=swap" rel="stylesheet">
 </head>
 
-<body>
+<body itemscope="" itemtype="https://schema.org/WebPage">
   <!--navigation bar-->
-  <div class="topnav" id="myTopnav" style="background-image: url('images/navbg.webp');">
-    <a href="index.html" aria-label="home page" class="activate" style="  font-style: 32px;   font weight: 400; padding: 0; "> <img src="images/omegalogo1.webp" alt=""  height="54.2px"> </a>
+  <div class="topnav" id="myTopnav" style="background-image: url('images/navbg.webp');" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
+    <header itemscope="" itemtype="http://schema.org/WPHeader">
+      <a href="index.html" aria-label="home page" class="activate" style="  font-style: 32px;   font weight: 400; padding: 0; "> <img src="images/omegalogo1.webp" alt=""  height="54.2px"> </a>
+
+    </header>
     <!-- to be developed
     <a href="supportus.html" style="  color: #66A3BB ">Support us</a>
     <div class="dropdown">
@@ -268,7 +307,7 @@
     </div>
 
   </div>
-  <footer>
+  <footer itemscope="itemscope" itemtype="http://schema.org/WPFooter">
     <div class="allrights">
       <div class="rights">
         <p>Omega Scans.	&#9400; 2021-2023. All Rights Reserved</p>
