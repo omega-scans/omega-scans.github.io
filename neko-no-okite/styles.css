@@ -95,7 +95,7 @@ img {
 /*navbar*/
 .topnav {
   overflow: hidden;
-  background-color: #333;
+  background-color: #253A47;
 }
 
 .topnav a {
@@ -109,7 +109,7 @@ img {
 }
 
 .activate {
-  background-color: #66A3BB
+  background-color: #253A47
 }
 
 .topnav a:hover {
@@ -145,10 +145,6 @@ img {
     position: absolute;
     right: 0;
     top: 0;
-  }
-  .sideads
-  {
-    display: none;
   }
 }
 
@@ -354,6 +350,7 @@ margin-left: 10px;
 .nextandprev a[rel=next] {
     float: right;
 }
+
 #disqus_thread{
   margin: auto 25px;
 }
@@ -363,7 +360,31 @@ margin-left: 10px;
   padding-top: 25px;
   margin-bottom: 25px;
 }
-/* .JJPP
-{
-  aspect-ratio:  720/10295;
-} */
+.support {
+  display: flex;
+  background-color: #333;
+  padding-bottom: 0;
+}
+
+.navpng {
+  padding: 13px;
+  color: #ffffff;
+  width: 25px;
+  height: 25px;
+  line-height: 1;
+}
+.navpng1:hover {
+  background-color: #fa6755;
+}
+
+.navpng2:hover {
+  background-color: #0666b4
+}
+
+.navpng3:hover {
+  background-color: #5865F2
+}
+
+.navpng4:hover {
+  background-color: #ffdd00
+}
