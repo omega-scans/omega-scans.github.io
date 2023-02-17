@@ -523,6 +523,14 @@ h4 {
   padding-top: 25px;
   margin-bottom: 25px;
 }
+.commentscont #disqus_thread a
+{
+  color: #66a3bb ;
+}
+.commentscont #disqus_thread .post-votes a
+{
+  border-color: #c0c0c0
+}
 .pg404
 {
 align-items: center;
