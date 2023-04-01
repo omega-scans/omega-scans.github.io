@@ -162,15 +162,32 @@ Lee Moo-Hwan, who learns his identity and the secrets of his parents, now ascend
     }
   </script>
 
-  <div class="areamin" id="readingarea">
-    <p><img loading="eager" src="https://parth-jagtap.github.io/Omega-Scans-Images/light-dragon/chapter-6/-001.jpg" alt="Page-1"></p>
+  <script type="text/javascript">
+var targethead = window.document.getElementsByTagName("head")[0],
+loadedSpiders = false,
+jst = window.document.createElement("script");
+jst.async = true;
+jst.type = "text/javascript";
+jst.src = "../images/bug-min.js";
+jst.onload = jst.onreadystatechange = function() {
+if (!loadedSpiders && (!this.readyState || this.readyState == 'complete')) {
+loadedSpiders = true;
+// start fire the JS.
+new BugController({'minBugs':2, 'maxBugs':4, 'mouseOver':'die'});
+new SpiderController({'maxBugs':2})
+}
+};
+targethead.appendChild(jst);
+</script>
+<div class="areamin" id="readingarea">
+      <p><img loading="eager" src="https://parth-jagtap.github.io/Omega-Scans-Images/light-dragon/chapter-6/-001.jpg" alt="Page-1"></p>
     <p><img loading="lazy" src="https://parth-jagtap.github.io/Omega-Scans-Images/light-dragon/chapter-6/-002.jpg" alt="Page-2"></p>
     <p><img loading="lazy" src="https://parth-jagtap.github.io/Omega-Scans-Images/light-dragon/chapter-6/-003.jpg" alt="Page-3"></p>
     <p><img loading="lazy" src="https://parth-jagtap.github.io/Omega-Scans-Images/light-dragon/chapter-6/-004.jpg" alt="Page-4"></p>
     <p><img loading="lazy" src="https://parth-jagtap.github.io/Omega-Scans-Images/light-dragon/chapter-6/-005.jpg" alt="Page-5"></p>
     <p><img loading="lazy" src="https://parth-jagtap.github.io/Omega-Scans-Images/light-dragon/chapter-6/-006.jpg" alt="Page-6"></p>
     <p><img loading="lazy" src="https://parth-jagtap.github.io/Omega-Scans-Images/light-dragon/chapter-6/-007.jpg" alt="Page-7"></p>
-    
+
 
 
      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1601431267706393"

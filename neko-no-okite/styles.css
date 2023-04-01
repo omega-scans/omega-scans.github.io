@@ -388,3 +388,21 @@ margin-left: 10px;
 .navpng4:hover {
   background-color: #ffdd00
 }
+#maincontainer{
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  height: 500px;
+}
+
+#insectcontainer{
+  position: absolute;
+  display: block;
+  top: 100px;
+  height: 500px;
+  width: 500px;
+  background: #2f5ccc;
+  animation: containerupanddown 1.2s infinite;
+  /* Originally was gonna make a larger insect, but it looks cuter when its smaller */
+  transform: scale(0.4);
+}
