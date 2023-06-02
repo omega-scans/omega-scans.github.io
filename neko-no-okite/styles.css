@@ -12,15 +12,18 @@ a {
   text-decoration: none;
   color: #fff;
 }
+
 h3 {
   padding: 15px 15px 15px 15px;
   color: #f4f4f4;
   margin: 0
 }
+
 h4 {
   color: #f4f4f4
 }
-hr{
+
+hr {
   border-style: solid;
   background-color: #363636;
   color: #363636
@@ -59,26 +62,32 @@ hr{
   #readingarea img {
     border: 0;
   }
+
   .allrelease {
     border-bottom: none;
     padding-bottom: 0;
     margin-bottom: 0;
   }
+
   .sidebar- {
     width: 100%;
     padding-left: 15px;
   }
+
   .sidebar {
     width: 100%;
     -ms-flex: 0 0 100%;
     flex: 0 0 100%;
   }
+
   .nav-bottom {
-      margin-left: 20px;
-      margin-right: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
   }
+
   .nav-bottom .chsele #chapterselector {
-      width: 100%;}
+    width: 100%;
+  }
 }
 
 #readingarea img {
@@ -167,6 +176,7 @@ img {
   width: 100%;
   text-align: left;
 }
+
 .omegasyb {
   max-height: 54.9px;
   margin: 0;
@@ -189,8 +199,6 @@ img {
 .path {
   font-size: 18px;
   float: left;
-
-
 }
 
 .path a {
@@ -215,7 +223,7 @@ img {
   background-color: #66a3bb;
   color: white;
   cursor: pointer;
-padding: 5px;
+  padding: 5px;
   border-radius: 50%;
   -moz-transition: all .2s;
   -o-transition: all .2s;
@@ -250,116 +258,113 @@ padding: 5px;
   color: grey;
 }
 
-  .allrelease {
+.allrelease {
+  max-width: 800px;
+  margin: 0 auto;
+}
 
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+  width: 330px;
+  height: 50px;
+  margin-bottom: 8px;
+  border-radius: 0.25rem !important;
+  text-align: center;
+}
 
-    max-width: 800px;
-    margin: 0 auto;
-  }
+.widget {
+  margin: 0 0 10px 0;
+}
 
-
-
-
-  .img-fluid {
-    max-width: 100%;
-    height: auto;
-    width: 330px;
-    height: 50px;
-    margin-bottom: 8px;
-    border-radius: 0.25rem !important;
-    text-align: center;
-
-  }
-
-
-
-  .widget {
-    margin: 0 0 10px 0;
-
-  }
-
-  /*sidebar*/
+/*sidebar*/
 /*bottom nav*/
-.nav-bottom {
+/* .nav-bottom {
     margin-top: 20px;
     margin-bottom: 20px;
-}
-
-
-
+} */
 .nav-bottom {
-    overflow: hidden;
-    margin: 10px auto;
-    max-width: 740px;
-    text-align: center;
+  /* overflow: hidden; */
+  margin: 10px auto;
+  max-width: 720px;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
 }
-@media only screen and (max-width: 450px){
-.nav-bottom .chsele {
-    float: none;
-    margin: 0;
 
-    overflow: hidden;
-    display: block;
+.nav-bottom .chsele {
+  float: none;
+  margin: 0;
+  /* overflow: hidden */
+  display: block;
 }
+
 .nav-bottom .chapterlead {
   display: block;
-    overflow: hidden;
-  }}
+  /* overflow: hidden; */
+}
 
 .nav-bottom .omg {
-    float: left;
-    margin-right: 10px;
+  float: left;
+  margin-right: 10px;
 }
 
 .nav-bottom .omg select {
-    background: #333;
-    border: 1px solid #333;
-    font-family: inherit;
-    display: block;
-    color: #808080;
-    padding: 5px 10px;
-    border-radius: 20px;
-    font-size: 13px;
-}
-.chapterlead {
-  overflow: hidden;
+  background: #333;
+  border: 1px solid #333;
+  font-family: inherit;
   display: block;
-}
-.nextandprev{
-  overflow: hidden;
-}
-.nextandprev a {
-    display: block;
-    padding: 2px 15px;
-    border-radius: 20px;
-    color: #253A47;
-    font-size: 13px;
-    background: #66a3bb;
-    line-height: 25px;
-    margin: 0 5px;
-        font-family: 'Poppins', sans-serif;
-        font-weight: 400;
-}
-.nav-bottom .btmnavspan {
-  float: right;
-margin-left: 10px;
-}
-.nextandprev a[rel=prev] {
-    float: left;
-}
-.nextandprev a[rel=next] {
-    float: right;
+  color: #808080;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 13px;
 }
 
-#disqus_thread{
+.chapterlead {
+  /* overflow: hidden; */
+  display: block;
+}
+
+.nextandprev {
+  /* overflow: hidden; */
+}
+
+.nextandprev a {
+  display: block;
+  padding: 2px 15px;
+  border-radius: 20px;
+  color: #253A47;
+  font-size: 13px;
+  background: #66a3bb;
+  line-height: 25px;
+  margin: 0 5px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+}
+
+.nav-bottom .btmnavspan {
+  float: right;
+  margin-left: 10px;
+}
+
+.nextandprev a[rel=prev] {
+  float: left;
+}
+
+.nextandprev a[rel=next] {
+  float: right;
+}
+
+#disqus_thread {
   margin: auto 25px;
 }
-.commentscont
-{
+
+.commentscont {
   background-color: #333;
   padding-top: 25px;
   margin-bottom: 25px;
 }
+
 .support {
   display: flex;
   background-color: #333;
@@ -373,6 +378,7 @@ margin-left: 10px;
   height: 25px;
   line-height: 1;
 }
+
 .navpng1:hover {
   background-color: #fa6755;
 }
@@ -387,22 +393,4 @@ margin-left: 10px;
 
 .navpng4:hover {
   background-color: #ffdd00
-}
-#maincontainer{
-  display: inline-block;
-  position: relative;
-  width: 100%;
-  height: 500px;
-}
-
-#insectcontainer{
-  position: absolute;
-  display: block;
-  top: 100px;
-  height: 500px;
-  width: 500px;
-  background: #2f5ccc;
-  animation: containerupanddown 1.2s infinite;
-  /* Originally was gonna make a larger insect, but it looks cuter when its smaller */
-  transform: scale(0.4);
 }
