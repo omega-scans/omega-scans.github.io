@@ -102,7 +102,7 @@ var nextprev = document.getElementsByClassName('nextandprev');
     else if (info.chnos< ipualtchno) {
       for(i in nextprev)
       {
-        nextprev[i].innerHTML = '<a href="https://omega-scans.github.io/i-picked-up-a-lamp-today/chapter-'+(info.chno - 1)+'" rel="prev"> < Previous </a><a href="https://omega-scans.github.io/i-picked-up-a-lamp-today/chapter-'+(info.chnos+1)+'" rel="next"> Next > </a>';
+        nextprev[i].innerHTML = '<a href="https://omega-scans.github.io/i-picked-up-a-lamp-today/chapter-'+(info.chnos - 1)+'" rel="prev"> < Previous </a><a href="https://omega-scans.github.io/i-picked-up-a-lamp-today/chapter-'+(info.chnos+1)+'" rel="next"> Next > </a>';
       }
     }
     else {
@@ -248,12 +248,36 @@ read.appendChild(para);
   }
 }
 
+function firstLatest(){
+var eleFir = document.getElementById("firstcha");
+var eleLst = document.getElementById("lastcha");
+var eleFirSp = document.getElementById("firstch");
+var eleLstSp = document.getElementById("lastch");
+
+if(info.series == "ipualt"){
+  eleFir.setAttribute("href", "https://omega-scans.github.io/i-picked-up-a-lamp-today/chapter-"+(ipualtchno-(ipualtchno-1)));
+  eleFirSp.innerHTML = "Chapter "+(ipualtchno-(ipualtchno-1));
+  eleLst.setAttribute("href", "https://omega-scans.github.io/i-picked-up-a-lamp-today/chapter-"+(ipualtchno));
+  eleLstSp.innerHTML = "Chapter "+(ipualtchno);
+}
+if(info.series == "ld"){
+  eleFir.setAttribute("href", "https://omega-scans.github.io/light-dragon/chapter-"+(ldchno-(ldchno-1)));
+  eleFirSp.innerHTML = "Chapter "+(ldchno-(ldchno-1));
+  eleLst.setAttribute("href", "https://omega-scans.github.io/light-dragon/chapter-"+(ldchno));
+  eleLstSp.innerHTML = "Chapter "+(ldchno);
+}
+
+
+}
+
 
 
 
 if(info.pageType == "info")
 {
+  // firstLatest();
   ulList();
+  firstLatest();
 }
 else if(info.pageType == "index"){
   indexch();

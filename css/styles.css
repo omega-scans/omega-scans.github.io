@@ -372,11 +372,13 @@ h4 {
 }
 
 .releasename {
-  position: relative;
+  /* position: relative;
   display: flex;
   justify-content: space-between;
-  align-items: baseline;
-  border-bottom: 1px solid #312f40;
+  align-items: baseline; */
+  text-align: center;
+  font-size: 18px;
+
   padding: 8px 15px;
 }
 
@@ -397,7 +399,7 @@ h4 {
 .list {
   color: #555;
   background-color: #363636;
-  padding: 10px 0;
+  padding-bottom:  1px;
   margin-bottom: 10px
 }
 
@@ -554,4 +556,43 @@ margin: 25px 0;
 .adsbygoogle
 {
   margin: auto;
+}
+.firlst {
+    overflow: hidden;
+    position: relative;
+    margin: 10px;
+
+}
+
+.firlst .firlstc {
+    width: 50%;
+    float: left;
+    text-align: center
+}
+
+.firlst .firlstc a {
+    display: block;
+    color: #253a47;
+    margin: 5px;
+    padding: 15px;
+    background: #33a6bb;
+    border-radius: 5px;
+    line-height: normal;
+    font-weight: bold;
+}
+
+.firlst .firlstc a span {
+    display: block;
+    font-size: 15px
+}
+
+.firlst .firlstc a span.fstno {
+    font-size: 20px;
+    margin-top: 6px;
+    font-weight: 1500;
+}
+
+.firlst .firlstc a:hover {
+    background: #253a47;
+    color: #33a6bb;
 }
