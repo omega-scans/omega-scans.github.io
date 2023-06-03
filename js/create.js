@@ -1,12 +1,10 @@
-
-
-  var chsele;
-
-
-
-  let ipualtchno = 15;
-  let tsdchno = 19;
-  let ldchno = 7;
+var ldDates =["3-June-2023", "18-February-2023", "29-December-2022", "29-December-2022", "29-December-2022", "18-November-2022", "4-November-2022", "18-September-2022"]
+//dates are in decending order of chapters
+var ipualtDates =["14-April-2023","14-April-2023","13-April-2023","25-March-2023","25-March-2023","1-March-2023","22-February-2023","22-February-2023","18-February-2023","17-February-2023","17-February-2023","22-January-2023","10-January-2023","10-January-2023","29-December-2022"];
+var chsele;
+let ipualtchno = 15;
+let tsdchno = 19;
+let ldchno = 8;
 // var series = document.getElementById('series');
 // var chnos = document.getElementById('chnos');
 function chselector(){
@@ -27,9 +25,8 @@ function chselector(){
   }
 
 }
-chselector();
-function seleCreate(chno, cnos)
-{
+
+function seleCreate(chno, cnos){
   if(info.pageType == "ch")
   {
   chsele  = document.getElementsByClassName("nwhspidey");
@@ -65,8 +62,7 @@ function seleCreate(chno, cnos)
   }
 }
 
-function nextprev()
-{
+function nextprev(){
 var nextprev = document.getElementsByClassName('nextandprev');
 
   if(info.series == "ld")
@@ -119,7 +115,152 @@ var nextprev = document.getElementsByClassName('nextandprev');
   }
 
 }
-if(info.pageType == "ch")
+
+function ulList(){
+  chsele = document.querySelector('.listch');
+  var ul = document.createElement('ul');
+  if(info.series=="ld"){
+    for(let i=0; i<ldchno;i++)
+    {
+      var lis = document.createElement("li");
+      lis.innerHTML = '<div class="lichbox"><div class="lichnum"><a href="light-dragon/chapter-'+(ldchno-i)+' " '+'> <span>Chapter '+(ldchno-i)+'</span> <span class="release-datech">'+(ldDates[i])+'</span></a></div></div>';
+      lis.setAttribute('value', ldchno-i);
+      lis.setAttribute('styles', "background-image: url('images/7791.png');");
+      ul.appendChild(lis);
+    }
+  }
+  if(info.series=="ipualt"){
+    for(let i=0; i<ipualtchno;i++)
+    {
+      var lis = document.createElement("li");
+      lis.innerHTML = '<div class="lichbox"><div class="lichnum"><a href="i-picked-up-a-lamp-today/chapter-'+(ipualtchno-i)+' " '+'> <span>Chapter '+(ipualtchno-i)+'</span> <span class="release-datech">'+(ipualtDates[i])+'</span></a></div></div>';
+      lis.setAttribute('value', ipualtchno-i);
+      lis.setAttribute('styles', "background-image: url('images/7791.png');");
+      ul.appendChild(lis);
+    }
+  }
+
+  chsele.appendChild(ul);
+}
+
+function indexch(){
+
+  if(document.getElementById('ipualtind').id == "ipualtind"){
+    var index;
+    var ul = document.createElement("ul");
+    index = document.getElementById('ipualtind');
+    for(let i=0; i<2; i++){
+      var li = document.createElement('li');
+      li.innerHTML ='<a href="https://omega-scans.github.io/i-picked-up-a-lamp-today/chapter-' +(ipualtchno-i)+'"'+ '>Chapter '+(ipualtchno-i)+'</a> <span class="release-date">'+(ipualtDates[i])+'</span>';
+  ul.appendChild(li);
+    }
+      index.appendChild(ul);
+  }
+  if(document.getElementById('ldind').id == "ldind"){
+    var index;
+    var ul = document.createElement("ul");
+    index = document.getElementById('ldind');
+    for(let i=0; i<2; i++){
+      var lis = document.createElement('li');
+      lis.innerHTML ='<a href="https://omega-scans.github.io/light-dragon/chapter-' +(ldchno-i)+'"'+ '>Chapter '+(ldchno-i)+'</a> <span class="release-date">'+(ldDates[i])+'</span>';
+  ul.appendChild(lis);
+    }
+      index.appendChild(ul);
+  }
+
+}
+
+function imgGen(){
+  var read = document.getElementById('readingarea');
+  if(info.ifnew ==1){
+    if(info.series=="ld")
+    {
+var para = document.createElement("p");
+      for(let i =0; i<info.pgNo; i++){
+        var para = document.createElement("p");
+
+        var p = document.createElement("img");
+
+        if(i == 0){
+          p.setAttribute("loading", "eager");
+          p.setAttribute("src", 'https://omega-scans-images.github.io/light-dragon/chapter-'+(info.chnos)+'/-'+(i+1)+'.jpg');
+          p.setAttribute("alt","Page-"+(i+1) );
+          para.appendChild(p);
+          read.appendChild(para);
+
+        }
+
+        else{
+          p.setAttribute("src", 'https://omega-scans-images.github.io/light-dragon/chapter-'+(info.chnos)+'/-'+(i+1)+'.jpg');
+          p.setAttribute("loading", "lazy");
+          p.setAttribute("alt","Page-"+(i+1) );
+          para.appendChild(p);
+          read.appendChild(para);
+
+        }
+
+      }
+      var para = document.createElement("p");
+      var p = document.createElement("img");
+      var scpt = document.createElement("script");
+      scpt.setAttribute("async", true);
+      scpt.setAttribute("src", "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1601431267706393");
+scpt.setAttribute("crossorigin", "anonymous");
+para.appendChild(scpt);
+var ins = document.createElement("ins");
+ins.setAttribute("class", "adsbygoogle");
+ins.setAttribute("style", "display:block");
+ins.setAttribute("data-ad-client", "ca-pub-1601431267706393");
+ins.setAttribute("data-ad-slot","9130805434");
+ins.setAttribute("data-ad-format","auto");
+ins.setAttribute("data-full-width-responsive", "true");
+para.appendChild(ins);
+var scpt2=document.createElement("script");
+scpt2.innerHTML = '         (adsbygoogle = window.adsbygoogle || []).push({});';
+    para.appendChild(scpt2);
+
+    if(info.patron==1){
+      var f = document.createElement("img");
+
+      f.setAttribute("loading", "lazy");
+      f.setAttribute("src", 'https://omega-scans-images.github.io/patrons/patrons'+(info.month)+'.png');
+      f.setAttribute("alt","Patrons");
+      para.appendChild(f);
+
+
+    }
+    if(info.collab==1){
+      var z = document.createElement("img");
+
+      z.setAttribute("src", 'https://omega-scans-images.github.io/100.png');
+      z.setAttribute("alt",'page-'+(info.pgNo+1));
+      para.appendChild(z);
+      read.appendChild(para);
+
+    }
+    p.setAttribute("src", 'https://omega-scans-images.github.io/INFOREQ.png');
+    p.setAttribute("alt",'page-'+(info.pgNo+2));
+    para.appendChild(p);
+
+read.appendChild(para);
+    }
+
+  }
+}
+
+
+
+
+if(info.pageType == "info")
+{
+  ulList();
+}
+else if(info.pageType == "index"){
+  indexch();
+}
+else if(info.pageType == "ch")
 {
   nextprev();
+  chselector();
+  imgGen();
 }

@@ -159,7 +159,13 @@ h4 {
   margin-bottom: 30px;
 }
 /* } */
+.trial{
 
+  width: 100%;
+  max-width: 800px;
+  align-self: center;
+  margin: 0 auto;;
+}
 .thumbimg {
   width: 100%;
   margin: 0 auto 0 auto;
@@ -268,8 +274,8 @@ h4 {
 }
 
 .rights {
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 25px;
+  padding-bottom: 25px;
   margin: 0 auto;
   background-color: #333;
   color: #C0C0C0;
