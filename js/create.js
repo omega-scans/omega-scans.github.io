@@ -78,7 +78,7 @@ var nextprev = document.getElementsByClassName('nextandprev');
     else if (info.chnos< ldchno) {
       for(i in nextprev)
       {
-        nextprev[i].innerHTML = '<a href="https://omega-scans.github.io/light-dragon/chapter-'+(info.chno - 1)+'" rel="prev"> < Previous </a><a href="https://omega-scans.github.io/light-dragon/chapter-'+(info.chnos+1)+'" rel="next"> Next > </a>';
+        nextprev[i].innerHTML = '<a href="https://omega-scans.github.io/light-dragon/chapter-'+(info.chnos - 1)+'" rel="prev"> < Previous </a><a href="https://omega-scans.github.io/light-dragon/chapter-'+(info.chnos+1)+'" rel="next"> Next > </a>';
       }
     }
     else {
