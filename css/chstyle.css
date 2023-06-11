@@ -89,7 +89,7 @@ img {
 .topnav a {
   float: left;
   display: block;
-  color: #66A3BB;
+  color: #33a6bb;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -182,7 +182,7 @@ img {
   height: 26px;
   border: none;
   outline: none;
-  background-color: #66a3bb;
+  background-color: #33a6bb;
   color: white;
   cursor: pointer;
 padding: 5px;
@@ -281,7 +281,7 @@ padding: 5px;
     border-radius: 20px;
     color: #253A47;
     font-size: 13px;
-    background: #66a3bb;
+    background: #33a6bb;
     line-height: 25px;
     margin: 0 5px;
         font-family: 'Poppins', sans-serif;

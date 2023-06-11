@@ -35,7 +35,7 @@ h4 {
 .topnav a {
   float: left;
   display: block;
-  color: #66A3BB;
+  color: #33a6bb;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -43,7 +43,7 @@ h4 {
 }
 
 .activate {
-  background-color: #66A3BB
+  background-color: #33a6bb
 }
 
 .topnav a:hover {
@@ -210,7 +210,7 @@ h4 {
 
 .listing .cmicdtl .comicsummary .chapter-list ul li a:visited {
   text-decoration: none;
-  color: #66A3BB;
+  color: #33a6bb;
 }
 
 .listing .cmicdtl .comicsummary .chapter-list ul {
@@ -441,7 +441,7 @@ h4 {
 
 .list .listch ul li a:visited {
   text-decoration: none;
-  color: #66A3BB
+  color: #33a6bb
 }
 
 .navpng1:hover {
@@ -489,7 +489,7 @@ h4 {
 }
 
 .list .listch ul::-webkit-scrollbar-track {
-  background-color: #66a3bb;
+  background-color: #33a6bb;
   border-radius: 10px
 }
 
@@ -533,7 +533,7 @@ h4 {
 }
 .commentscont #disqus_thread a
 {
-  color: #66a3bb ;
+  color: #33a6bb ;
 }
 .commentscont #disqus_thread .post-votes a
 {
