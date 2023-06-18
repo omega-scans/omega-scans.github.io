@@ -1,36 +1,132 @@
-var ldDates = ["3-June-2023", "18-February-2023", "29-December-2022", "29-December-2022", "29-December-2022", "18-November-2022", "4-November-2022", "18-September-2022"]
+var ldDates = ["2023-06-03", "2023-02-18", "2022-12-29", "2022-12-29", "2022-12-29", "2022-11-18", "2022-11-04", "2022-10-18"]
 //dates are in decending order of chapters
-var ipualtDates = ["14-April-2023", "14-April-2023", "13-April-2023", "25-March-2023", "25-March-2023", "1-March-2023", "22-February-2023", "22-February-2023", "18-February-2023", "17-February-2023", "17-February-2023", "22-January-2023", "10-January-2023", "10-January-2023", "29-December-2022"];
+var ipualtDates = ["2023-04-14", "2023-04-14", "13-April-2023", "25-March-2023", "25-March-2023", "1-March-2023", "22-February-2023", "22-February-2023", "18-February-2023", "17-February-2023", "17-February-2023", "22-January-2023", "10-January-2023", "10-January-2023", "29-December-2022"];
 var chsele;
 let ipualtchno = 15;
 let tsdchno = 19;
 let ldchno = 8;
 // var series = document.getElementById('series');
 // var chnos = document.getElementById('chnos');
-if(info.series =="ld")
-{
-  if(info.chnos == ldchno)
-  {
-    var lddt = new Date(info.date);
+var lst_dates = [];
+var series = [];
+
+function dateSet() {
+
+
+  var ipualtdt = new Date(ipualtDates[0]);
+  lst_dates.push(ipualtdt);
+  series.push('ipualt');
+  var lddt = new Date(ldDates[0]);
+  lst_dates.push(lddt);
+  series.push('ld');
+
+
+
+
+
+
+  // if(info.series =="nno")
+  // {
+  //   if(info.chnos == ldchno)
+  //   {
+  //     var lddt = new Date(info.date);
+  //   }
+  //
+  // }
+}
+dateSet();
+const max = new Date(Math.max(...lst_dates));
+
+function latestDate() {
+  var indDate = new Date(max);
+  for (let i = 0; i < lst_dates.length; i++) {
+    if (indDate = lst_dates[i]) {
+      console.log(series[i]);
+      break;
+    }
+
   }
 
 }
-if(info.series =="ipualt")
-{
-  if(info.chnos == ipualtchno)
-  {
-    var lddt = new Date(info.date);
+// latestDate();
+function datediff(arr) {
+  let currDate = new Date();
+  let targetDate = new Date(arr);
+  var millsec = 1000;
+
+  var secs = Math.round(
+    Math.abs(currDate - targetDate) / millsec
+  );
+  var mins = Math.round(
+    Math.abs(currDate - targetDate) / (millsec * 60));
+  var hours = Math.round(
+    Math.abs(currDate - targetDate) / (millsec * 60 * 60));
+  var days = Math.round(
+    Math.abs(currDate - targetDate) / (millsec * 60 * 60 * 24));
+  var weeks = Math.round(
+    Math.abs(currDate - targetDate) / (millsec * 60 * 60 * 24 * 7));
+  var months = currDate.getMonth() - targetDate.getMonth() + 12 * (currDate.getFullYear() - targetDate.getFullYear());
+  var years = Math.abs(currDate.getFullYear() - targetDate.getFullYear());
+  if (secs >= 0 && secs <= 60) {
+    if (secs == 1) {
+      return secs + " second ago";
+
+    } else {
+      return secs + " seconds ago";
+
+    }
+  } else if (mins >= 1 && mins <= 60) {
+    return mins + " minutes ago";
+    if (mins == 1) {
+      return mins + " minute ago";
+
+    } else {
+      return mins + " minutes ago";
+
+    }
+  } else if (hours >= 1 && hours <= 24) {
+    if (hours == 1) {
+      return hours + " hour ago";
+
+    } else {
+      return hours + " hours ago";
+
+    }
+  } else if (days >= 1 && days <= 7) {
+    if (days == 1) {
+      return days + " day ago";
+
+    } else {
+      return days + " days ago";
+
+    }
+  } else if (weeks >= 1 && weeks <= 4) {
+    if (weeks == 1) {
+      return weeks + " week ago";
+
+    } else {
+      return weeks + " weeks ago";
+
+    }
+  } else if (months >= 1 && months <= 12) {
+    if (months == 1) {
+      return months + " month ago";
+
+    } else {
+      return months + " months ago";
+
+    }
+  } else {
+    if (years == 1) {
+      return years + " year ago";
+
+    } else {
+      return years + " years ago";
+
+    }
   }
 
 }
-// if(info.series =="nno")
-// {
-//   if(info.chnos == ldchno)
-//   {
-//     var lddt = new Date(info.date);
-//   }
-//
-// }
 
 function chselector() {
   var chno;
@@ -128,7 +224,7 @@ function ulList() {
   if (info.series == "ld") {
     for (let i = 0; i < ldchno; i++) {
       var lis = document.createElement("li");
-      lis.innerHTML = '<div class="lichbox"><div class="lichnum"><a href="light-dragon/chapter-' + (ldchno - i) + ' " ' + '> <span>Chapter ' + (ldchno - i) + '</span> <span class="release-datech">' + (ldDates[i]) + '</span></a></div></div>';
+      lis.innerHTML = '<div class="lichbox"><div class="lichnum"><a href="light-dragon/chapter-' + (ldchno - i) + ' " ' + '> <span>Chapter ' + (ldchno - i) + '</span> <span class="release-datech">' + (datediff(ldDates[i])) + '</span></a></div></div>';
       lis.setAttribute('value', ldchno - i);
       lis.setAttribute('styles', "background-image: url('images/7791.png');");
       ul.appendChild(lis);
@@ -137,7 +233,7 @@ function ulList() {
   if (info.series == "ipualt") {
     for (let i = 0; i < ipualtchno; i++) {
       var lis = document.createElement("li");
-      lis.innerHTML = '<div class="lichbox"><div class="lichnum"><a href="i-picked-up-a-lamp-today/chapter-' + (ipualtchno - i) + ' " ' + '> <span>Chapter ' + (ipualtchno - i) + '</span> <span class="release-datech">' + (ipualtDates[i]) + '</span></a></div></div>';
+      lis.innerHTML = '<div class="lichbox"><div class="lichnum"><a href="i-picked-up-a-lamp-today/chapter-' + (ipualtchno - i) + ' " ' + '> <span>Chapter ' + (ipualtchno - i) + '</span> <span class="release-datech">' + (datediff(ipualtDates[i])) + '</span></a></div></div>';
       lis.setAttribute('value', ipualtchno - i);
       lis.setAttribute('styles', "background-image: url('images/7791.png');");
       ul.appendChild(lis);
@@ -155,7 +251,7 @@ function indexch() {
     index = document.getElementById('ipualtind');
     for (let i = 0; i < 2; i++) {
       var li = document.createElement('li');
-      li.innerHTML = '<a href="https://omega-scans.github.io/i-picked-up-a-lamp-today/chapter-' + (ipualtchno - i) + '"' + '>Chapter ' + (ipualtchno - i) + '</a> <span class="release-date">' + (ipualtDates[i]) + '</span>';
+      li.innerHTML = '<a href="https://omega-scans.github.io/i-picked-up-a-lamp-today/chapter-' + (ipualtchno - i) + '"' + '>Chapter ' + (ipualtchno - i) + '</a> <span class="release-date">' + (datediff(ipualtDates[i])) + '</span>';
       ul.appendChild(li);
     }
     index.appendChild(ul);
@@ -166,7 +262,7 @@ function indexch() {
     index = document.getElementById('ldind');
     for (let i = 0; i < 2; i++) {
       var lis = document.createElement('li');
-      lis.innerHTML = '<a href="https://omega-scans.github.io/light-dragon/chapter-' + (ldchno - i) + '"' + '>Chapter ' + (ldchno - i) + '</a> <span class="release-date">' + (ldDates[i]) + '</span>';
+      lis.innerHTML = '<a href="https://omega-scans.github.io/light-dragon/chapter-' + (ldchno - i) + '"' + '>Chapter ' + (ldchno - i) + '</a> <span class="release-date">' + (datediff(ldDates[i])) + '</span>';
       ul.appendChild(lis);
     }
     index.appendChild(ul);
