@@ -174,8 +174,8 @@ img {
 #myBtn {
   display: none;
   position: fixed;
-  bottom: 20px;
-  right: 30px;
+  bottom: 30px;
+  right: 20px;
   z-index: 99;
   font-size: 18px;
   width: 26px;
@@ -329,4 +329,25 @@ margin-left: 10px;
 }
 .navpng4:hover {
   background-color: #ffdd00
+}
+
+.readprogress{
+  position: -webkit-sticky;
+   position: fixed;
+   bottom: 0;
+   width: 100%;
+   background-color: #33a6bb;
+   padding: 5px 0;
+display: none;
+opacity: 75%;
+}
+
+.progressbar{
+  margin: auto 0;
+  float: left;
+  height: 8px;
+  margin: 0 5px 0 5px;
+  background-color: #253A47;
+border-radius: 4px;
+max-width: 99%;
 }

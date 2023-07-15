@@ -58,6 +58,8 @@ Lee Moo-Hwan, who learns his identity and the secrets of his parents, now ascend
   <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,200;1,200;1,300&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js" charset="utf-8" defer></script>
+
   <script src="../js/create.js" charset="utf-8" defer></script>
 
   <title>Light Dragon - Chapter 8</title>
@@ -116,28 +118,7 @@ Lee Moo-Hwan, who learns his identity and the secrets of his parents, now ascend
   </div><br> <br>
 
   <div onclick="topFunction()" id="myBtn" title="Go to top"> <span class=""> <img src="../images/arrow.png" style="color: white; height: 24px; width:24px;" alt=""> </span> </div>
-  <script>
-    var mybutton = document.getElementById("myBtn");
 
-
-    window.onscroll = function() {
-      scrollFunction()
-    };
-
-    function scrollFunction() {
-      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        mybutton.style.display = "block";
-      } else {
-        mybutton.style.display = "none";
-      }
-    }
-
-
-    function topFunction() {
-      document.body.scrollTop = 0;
-      document.documentElement.scrollTop = 0;
-    }
-  </script>
 
   <div class="areamin">
     <div class="nav-bottom">
@@ -158,7 +139,11 @@ Lee Moo-Hwan, who learns his identity and the secrets of his parents, now ascend
       </span>
     </div>
   </div>
-  <div class="areamin" id="readingarea">
+  <div class="areamin" id="readingarea" onscroll="progfun()">
+
+
+
+
 
   </div>
   <div class="nav-bottom">
@@ -211,6 +196,12 @@ Lee Moo-Hwan, who learns his identity and the secrets of his parents, now ascend
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  <div class="readprogress" id="readprogress">
+    <div class="progressbar" id="progressbar">
+
+    </div>
+  </div>
+
   <footer>
     <div class="allrights">
       <div class="rights">
@@ -224,7 +215,7 @@ Lee Moo-Hwan, who learns his identity and the secrets of his parents, now ascend
       chnos: 8,
       pageType: "ch",
       dor: '3-June-2023',
-      date : "2023-06-03",
+      date: "2023-06-03",
       ifnew: 1,
       patron: 1,
       pgNo: 7,
@@ -232,11 +223,8 @@ Lee Moo-Hwan, who learns his identity and the secrets of his parents, now ascend
       grp: "mhf",
       month: "june",
       hr: 13,
-      min:19
+      min: 19
     };
-
-
-
   </script>
 </body>
 
