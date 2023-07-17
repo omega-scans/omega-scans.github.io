@@ -1,10 +1,10 @@
-var ldDates = ["2023-06-03", "2023-02-18", "2022-12-29", "2022-12-29", "2022-12-29", "2022-11-18", "2022-11-04", "2022-10-18"]
+var ldDates = ["2023-07-17","2023-07-17","2023-06-03", "2023-02-18", "2022-12-29", "2022-12-29", "2022-12-29", "2022-11-18", "2022-11-04", "2022-10-18"]
 //dates are in decending order of chapters
 var ipualtDates = ["2023-04-14", "2023-04-14", "13-April-2023", "25-March-2023", "25-March-2023", "1-March-2023", "22-February-2023", "22-February-2023", "18-February-2023", "17-February-2023", "17-February-2023", "22-January-2023", "10-January-2023", "10-January-2023", "29-December-2022"];
 var chsele;
 let ipualtchno = 15;
 let tsdchno = 19;
-let ldchno = 8;
+let ldchno = 10;
 // var series = document.getElementById('series');
 // var chnos = document.getElementById('chnos');
 var lst_dates = [];
@@ -162,9 +162,9 @@ function seleCreate(chno, cnos) {
     for (var i = 0; i < chno; i++) {
 
       var opt = document.createElement("option");
-      opt.innerHTML = 'Chapter ' + (i + 1);
-      opt.setAttribute("value", "https://omega-scans.github.io/light-dragon/chapter-" + (i + 1) + ".html");
-      if ((i + 1) == cnos) {
+      opt.innerHTML = 'Chapter ' + (chno-i);
+      opt.setAttribute("value", "https://omega-scans.github.io/light-dragon/chapter-" + (chno-i) + ".html");
+      if ((chno-i) == cnos) {
         opt.setAttribute("selected", true);
       }
       para.appendChild(opt);
