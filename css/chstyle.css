@@ -4,7 +4,7 @@ html {
 body {
   text-align: center;
   margin: 0 auto;
-  background-image: url(images/blackbg.png);
+  background-image: url('../images/7791.webp');
 }
 a {
   text-decoration: none;
@@ -85,6 +85,7 @@ img {
 .topnav {
   overflow: hidden;
   background-color: #253A47;
+  background-image: url('../images/navbg.jpg')
 }
 .topnav a {
   float: left;
@@ -162,7 +163,9 @@ img {
 }
 .path {
   font-size: 18px;
-  float: left;
+margin:auto;
+  background-color: #383838;
+
 }
 .path a {
   text-decoration: none;
@@ -350,4 +353,79 @@ opacity: 75%;
   background-color: #253A47;
 border-radius: 4px;
 max-width: 99%;
+}
+.namech1{
+  background-color: #383838;
+  padding: 10px 0;
+}
+.nav-bottom .omg .nwhspidey .chapter-opt option:hover{
+  background-color: #33a6bb !important;
+}
+
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 30px;
+  float: right;
+  margin: 15.5px 10px 0 0;
+  border-width: 2px;
+  color: #fff;
+  border-style: double;
+  border-radius: 34px
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #33a6bb;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 25px;
+  width: 25px;
+  left: 4px;
+  bottom: 2.5px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #253A47;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #253A47;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(25px);
+  -ms-transform: translateX(25px);
+  transform: translateX(25px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 30px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
 }

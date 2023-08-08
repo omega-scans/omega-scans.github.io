@@ -1,0 +1,126 @@
+html {
+  scroll-behavior: smooth;
+}
+ body {
+  text-align: center;
+  margin: 0 auto;
+
+}
+.light{
+  background-image: url("https://omega-scans-images.github.io/images/77911.png") !important;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+h3 {
+  padding: 15px 15px 15px 15px;
+  color: #f4f4f4;
+  margin: 0
+}
+h4 {
+  color: #f4f4f4
+}
+hr{
+  border-style: solid;
+  background-color: #363636;
+  color: #363636
+}
+@media only screen and (max-width: 720px) {
+  #readingarea.areamin {
+    margin: 0px 0px;
+  }
+}
+@media only screen and (max-width: 720px) {
+  #readingarea.areamin {
+    margin: 10px 0;
+  }
+}
+#readingarea.areamin {
+  text-align: left;
+  line-height: 23px;
+  margin: 20px auto
+}
+#readingarea {
+  margin: 10px auto;
+  text-align: center;
+  position: relative;
+  max-width: 1142px;
+}
+#readingarea p {
+  margin: 0;
+}
+@media only screen and (max-width: 720px) {
+  #readingarea img {
+    border: 0;
+  }
+  .allrelease {
+    border-bottom: none;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+  .sidebar- {
+    width: 100%;
+    padding-left: 15px;
+  }
+  .sidebar {
+    width: 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+  }
+  .nav-bottom {
+      margin-left: 20px;
+      margin-right: 20px;
+  }
+  .nav-bottom .chsele #chapterselector {
+      width: 100%;}
+}
+#readingarea img {
+  max-width: 100%;
+  margin: 0 auto;
+  display: block;
+}
+
+/*navbar*/
+.light .topnav {
+  overflow: hidden;
+  background-color: #fff;
+  background-image: url('https://omega-scans-images.github.io/images/navbgn.png')
+}
+
+/*navbar*/
+.light .namech {
+  color: #383838;
+  text-align: center;
+  font-size: 24px;
+  margin-top: 40px;
+  font-weight: lighter;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  max-width: 740px;
+  margin: 40px auto 10px auto;
+}
+.light .path {
+  font-size: 18px;
+margin:auto;
+  background-color: #fff;
+
+}
+.light .path a {
+  text-decoration: none;
+  text-align: center;
+  color: #383838;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.light .nav-bottom .omg select {
+    background: #808080;
+    border: 1px solid #333;
+    font-family: inherit;
+    display: block;
+    color: #ddd;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 13px;
+}
