@@ -600,3 +600,32 @@ margin: 25px 0;
     background: #253a47;
     color: #33a6bb;
 }
+.details{
+  text-align: left;
+  color: #f4f4f4 !important;
+
+}
+.char_img{
+  height: 90px !important;
+  width: 90px !important;
+  margin: 0 auto;
+  float: left;
+}
+.glossary{
+  max-width: 720px;
+  margin: 25px auto;
+  background-color: #363636;
+padding: 20px;
+}
+.os_types{
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  background: linear-gradient(to right, #253a47 40%, rgba(255,0,0,0));
+  color: #f4f4f4;
+  padding: 5px 0 5px 10px;
+display: inline-block;
+font-weight: bold;
+text-align: left;
+width: 10rem;
+}
