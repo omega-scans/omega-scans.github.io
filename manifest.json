@@ -1,7 +1,7 @@
 {
     "theme_color": "#33a6bb",
     "background_color": "#333",
-    "display": "standalone",
+    "display": "minimal-ui",
     "scope": "/",
     "start_url": "/",
     "name": "Omega Scans",
