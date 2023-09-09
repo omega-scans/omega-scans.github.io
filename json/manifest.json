@@ -3,7 +3,7 @@
     "background_color": "#333",
     "display": "standalone",
     "scope": "/",
-    "start_url": "/",
+    "start_url": "https://omega-scans.github.io",
     "name": "Omega Scans",
     "short_name": "Omega Scans",
     "description": "Read manga online free at Omega Scans, update fastest, most full, free with high-quality images",
