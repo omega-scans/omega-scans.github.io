@@ -1,32 +1,42 @@
 {
-    "theme_color": "#33a6bb",
-    "background_color": "#333",
-    "display": "minimal-ui",
-    "scope": "/",
-    "start_url": "/",
-    "name": "Omega Scans",
-    "short_name": "Omega Scans",
-    "description": "Read manga online free at Omega Scans, update fastest, most full, free with high-quality images",
-    "icons": [
-        {
-            "src": "images/icon-192x192.png",
-            "sizes": "192x192",
-            "type": "image/png"
-        },
-        {
-            "src": "images/icon-256x256.png",
-            "sizes": "256x256",
-            "type": "image/png"
-        },
-        {
-            "src": "images/icon-384x384.png",
-            "sizes": "384x384",
-            "type": "image/png"
-        },
-        {
-            "src": "images/icon-512x512.png",
-            "sizes": "512x512",
-            "type": "image/png"
-        }
-    ]
+  "theme_color": "#33a6bb",
+  "background_color": "#333",
+  "display": "minimal-ui",
+  "scope": "/",
+  "start_url": "/",
+  "name": "Omega Scans",
+  "short_name": "Omega Scans",
+  "description": "Read manga online free at Omega Scans, update fastest, most full, free with high-quality images",
+  "icons": [
+    {
+      "src": "images/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "images/icon-256x256.png",
+      "sizes": "256x256",
+      "type": "image/png"
+    },
+    {
+      "src": "images/icon-384x384.png",
+      "sizes": "384x384",
+      "type": "image/png"
+    },
+    {
+      "src": "images/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "categories": [
+    "entertainment",
+    "magazines",
+    "manga",
+    "manhwa",
+    "manhua",
+    "comics",
+    "omega-scans",
+    "light dragon"
+  ]
 }
