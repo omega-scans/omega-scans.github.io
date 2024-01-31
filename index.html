@@ -375,15 +375,7 @@
 
   </footer>
   <div onclick="topFunction()" id="myBtn" title="Go to top"> <span class=""> <img src="images/arrow.png" style="color: white; height: 24px; width:24px;" alt=""> </span> </div>
-  <script>
-  if ("serviceWorker" in navigator) {
-  window.addEventListener("load", function() { navigator.serviceWorker
-  .register("./serviceworker.js")
-  .then(res => console.log("service worker registered"))
-  .catch(err => console.log("service worker not registered", err))
-  })
-  }
-  </script>
+
   <script type="text/javascript">
     var info = {
       series: "all",
